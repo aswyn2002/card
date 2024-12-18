@@ -13,19 +13,23 @@ const ReviewCard = () => {
       <div className="mt-2">
         <ReviewStar />
       </div>
-      <div className="mt-2 flex relative">
-        <input
-          type="text"
-          placeholder="Share your thoughts ..."
-          className="border-2 border-solid p-4 pl-5 w-[320px] rounded-lg border-[#E5E7EB] focus:outline-none"
-        />
-        <Image
-          src={Button}
-          width={50}
-          height={60}
-          alt="Button inside input"
-          className="absolute right-8 top-1.5 cursor-pointer"
-        />
+      <div className="mt-2 flex flex-col">
+        <div className="relative w-full">
+          <input
+            type="text"
+            placeholder="Share your thoughts ..."
+            className="border-2 border-solid p-4 pr-14 w-full rounded-lg border-[#E5E7EB] focus:outline-none"
+          />
+          <div className="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">
+            <Image
+              src={Button}
+              width={30}
+              height={30}
+              alt="Button inside input"
+              className="w-8 h-8 sm:w-10 sm:h-10"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
