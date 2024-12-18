@@ -2,6 +2,7 @@ import Calendar from "@/components/assets/calendar/Calendar";
 import CalendarHeader from "@/components/assets/calendar/CalendarHeader";
 import CarDescription from "@/components/BookingDetail/CarDescription";
 import DetailCard from "@/components/BookingDetail/DetailCard";
+import ThingsToKnow from "@/components/BookingDetail/ThingsToKnow";
 import Included from "@/components/BookingDetail/Included";
 import Location from "@/components/BookingDetail/Location";
 import PickDrop from "@/components/BookingDetail/PickDrop";
@@ -25,6 +26,7 @@ const BookingDetail = () => {
               <CarDescription />
               <Included />
               <Location />
+              <ThingsToKnow/>
             </div>
             <div className="p-1 flex flex-col gap-4">
               <CalendarHeader />
