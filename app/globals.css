@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --background: #ffffff;
+  --foreground: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  /* color: var(--foreground); */
+  background: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Input field */
+.ant-form-item-control-input {
+  .ant-input {
+    height: 42px;
+    border-radius: 16px;
+    border: 1px solid "#D1D5DB";
+    padding: 9px, 13px, 9px, 13px;
+    width: 100%;
+    &:hover {
+      border: 1px solid #d1d5db !important;
+    }
+    &:focus {
+      border-color: 1px solid #e71c3a !important;
+      outline: none;
+    }
+  }
+}
+
+/* Review star icon */
+.ant-rate {
+  width: 100%;
+  display: flex;
+}
+
+/* :where(.css-dev-only-do-not-override-1x0dypw).ant-rate {
+  margin-right: 45px !important;
+  margin-top: 4px !important;
+} */
+
+/* Navbar hamburger icon  divider*/
+.dropdown-divider {
+  margin: 8px 0;
+  border-color: #bdbdbd;
+}
+
+/* Modal-Divider */
+.modal-divider {
+  /* margin: 8px 5px; */
+  border-color: #d1d5db;
+}
+
+/*slider next button */
+.slick-arrow.slick-next {
+  right: 54px;
+  top: 50%;
+}
+
+.slick-next:before {
+  font-size: 50px !important;
+  color: #d9d9d999 !important;
+}
+
+/* slider prev button */
+
+.slick-arrow.slick-prev {
+  left: 54px;
+  top: 50%;
+  z-index: 1;
+}
+
+.slick-prev:before {
+  font-size: 50px !important;
+  color: #d9d9d999 !important;
+}
+
+/* Default margin */
+.slider-container .slick-slide > div {
+  margin: 0 5px;
+}
+
+@media (min-width: 768px) {
+  .slider-container .slick-slide > div {
+    margin: 0 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider-container .slick-slide > div {
+    margin: 0 25px;
+  }
+}
+
+.custom-label {
+  font-family: "poppins";
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+}
+.leftoutlined {
+  color: #e71c3a;
+  font-size: 23px;
+}
+
+.rightoutlined {
+  color: #e71c3a;
+  font-size: 23px;
+}
+
+@media (min-width: 768px) {
+  .leftoutlined {
+    color: #e71c3a;
+    font-size: 25px;
+  }
+
+  .rightoutlined {
+    color: #e71c3a;
+    font-size: 25px;
+  }
+}
+.ant-pagination-item-active a {
+  background: #e71c3a !important;
+  color: #ffffff !important;
+  border-radius: 50%;
+}
+.ant-pagination-item-active{
+  border: none !important;
+}
