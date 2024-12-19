@@ -22,6 +22,7 @@ const PaymentMethods: React.FC = () => {
             <h1 className="text-center font-poppins text-3xl font-semibold text-[#1F2937]">
                 Payment Methods
             </h1>
+            <hr className="my-5 w-[80px] mx-auto"/>
             <div className="space-y-4 mt-4">
                 {cards.map((card, index) => (
                     <div
@@ -40,7 +41,7 @@ const PaymentMethods: React.FC = () => {
                                 />
                             </div>
                             <div className="cardNo flex flex-col sm:flex-row sm:space-x-3 items-start sm:items-center">
-                                <h1 className="text-base text-[#000000] font-poppins font-medium whitespace-nowrap">
+                                <h1 className="text-base text-[#000000] font-poppins font-medium ">
                                     {card.name}
                                 </h1>
                                 <span className="text-[#6B7280] font-light text-sm">{card.number}</span>
