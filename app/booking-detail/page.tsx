@@ -5,6 +5,7 @@ import DetailCard from "@/components/BookingDetail/DetailCard";
 import ThingsToKnow from "@/components/BookingDetail/ThingsToKnow";
 import Included from "@/components/BookingDetail/Included";
 import Location from "@/components/BookingDetail/Location";
+import InsuranceAndExtra from "@/components/BookingDetail/InsuranceAndExtra";
 import PickDrop from "@/components/BookingDetail/PickDrop";
 import ReviewCard from "@/components/BookingDetail/ReviewCard";
 import ShowPhotos from "@/components/BookingDetail/ShowPhotos";
@@ -22,6 +23,7 @@ const BookingDetail = () => {
           <div className="grid  md:grid-cols-[2.] lg:grid-cols-[2.2fr,1.2fr] gap-[45px] md:p-3">
             <div className="flex flex-col gap-[44px] p-1">
               <DetailCard />
+              <InsuranceAndExtra/>
               <VehcileParameter />
               <CarDescription />
               <Included />
